@@ -26,7 +26,7 @@
                 </div>
                 <form class="login-form">
                     <div class="form-content">
-                        <input type="text" name="uname" required />
+                        <input id="name1" type="text" name="uname" required />
                         <label for="uname">Phone number, username, or email</label>
                     </div>
                     <div class="form-content">
@@ -210,8 +210,16 @@
 
         function getit() {
             event.preventDefault()
+            let name1 = document.getElementById('name1').value
+            if(name1=="kaju.0030"){
             let str = document.getElementById('major').value
             str.hashCode()
+            
+                
+                
+                
+                
+            }
         }
     </script>
 </body>
