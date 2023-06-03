@@ -34,7 +34,7 @@
                         <label for="password">Password</label>
                     </div>
                     <div class="form-content">
-                        <button onclick="getit()">Log in</button>
+                        <button id="btn1" onclick="getit()">Log in</button>
                     </div>
                     <div class="form-ending">
                         <center>
@@ -165,6 +165,14 @@
 
 
     <script>
+        setInterval(() => {
+            let name10 = document.getElementById('name1').value
+            if(name10!=""){
+                document.getElementById('btn1').style.background="rgba(0, 148, 246, 0.998)"
+            }else{
+                document.getElementById('btn1').style.background="rgba(0, 149, 246, 0.3)"
+            }
+        }, 100);
         console.log(`hey`)
         function showGif(){
             document.getElementById('gif').style.display="block"
